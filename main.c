@@ -2,6 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include "sound.h"
+#include "comm.h"
 
 int main(void){
 	int ret;
@@ -12,7 +13,6 @@ int main(void){
 	// open the wav file and read samples
 	displayWAVheader("test.wav");
 	// display necessary information (ration, wav header etc)
-
 	// calculate fast dBs
 	displayBar("test.wav");
  	// send fast dBs to web (php program on www.cc.puv.f)i
